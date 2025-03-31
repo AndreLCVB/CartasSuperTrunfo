@@ -1,4 +1,4 @@
-#include <stdio.h>
+/*#include <stdio.h>
 #include <string.h>
 
 // Declaração das variáveis carta 1
@@ -91,4 +91,40 @@ int main()
   printf("Pontos turísticos: %d\n", numeroPontosTuristicos2);
 
   return 0;
-}
+} */
+
+#include <stdio.h>
+
+int main (){
+
+    float temperatura, umidade;
+    unsigned int estoque, estoqueMinimo = 1000;
+
+    printf("Digite a temperatura:\n ");
+    scanf("%f", &temperatura);
+    printf("Digite a umidade:\n ");
+    scanf("%f", &umidade);
+    printf("Digite o estoque:\n ");
+    scanf("%d", &estoque);
+
+
+    if (temperatura > 30){
+        printf("temperatura alta\n");
+    }else{
+      printf("temperatura esta dentro dos parametros\n");
+    }
+    
+    if(umidade > 50){
+        printf("umidade alta\n");
+    }else{
+        printf("umidade esta dentro dos parametros\n");
+    }
+
+    if(estoque < estoqueMinimo){
+        printf("estoque abaixo do minimo\n");
+    }else {
+        printf("estoque normal\n");
+    }
+    
+
+
